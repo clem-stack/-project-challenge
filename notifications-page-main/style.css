@@ -1,0 +1,189 @@
+:root{
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+    --White: hsl(0, 0%, 100%);
+    --Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --Grayish-blue: hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue: hsl(224, 21%, 14%);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: var(--Very-light-grayish-blue);
+    font-family: sans-serif;
+    font-size: 16px;
+}
+p{
+    color: var(--Dark-grayish-blue);
+}
+.container{
+    max-width: 800px;
+    margin: 2rem auto;
+}
+.contents{
+    background-color: var(--White);
+    margin: 10px;
+    padding: 40px 30px 0;
+    border-radius: 14px;
+    box-shadow: 0px 0px 26px -13px rgba(0,0,0, 0.26);
+} 
+.content-head{
+    display: flex;
+    justify-content: space-between;
+}
+.content-detail{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.notify{
+    font-size: 1.8em;
+}
+.num{
+    background: var(--Blue);
+    color: var(--White);
+    border-radius: 5px;
+    padding: 4px 12px;
+    font-size: 1.05rem;
+    font-weight: 800;
+}
+.mark{
+    cursor: pointer;
+    color: var(--Dark-grayish-blue);
+    font-size: 1.1rem;
+}
+.mark:hover{
+    color: var(--Blue);
+}
+.messages{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-top: 1.5rem;
+}
+.message-content{
+    display: flex;
+    gap: 1.66rem;
+    align-items: center;
+    padding: 1rem;
+}
+.new{
+    background: var(--Very-light-grayish-blue);
+    border-radius: 7px;
+}
+.message-img img{
+    width: 50px;
+}
+.messagesss .dot{
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: var(--Red);
+}
+.name{
+    color: var(--Very-dark-blue);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.name:hover{
+    color: var(--Blue);
+    cursor: pointer;
+}
+.secondary{
+    color: var(--Dark-grayish-blue);
+    font-weight: 700;
+    font-size: 1rem;
+}
+.secondary:hover{
+    color: var(--Blue);
+    cursor: pointer;
+}
+.time{
+    color: var(--Dark-grayish-blue);
+}
+.kim-message{
+    display: flex;
+    gap: 1.66rem;
+    align-items: center;
+}
+.kim{
+    justify-content: space-between;
+}
+.commented-pic img{
+    width: 50px;
+}
+.grp{
+    color: var(--Blue);
+    font-weight: 700;
+    font-size: 1rem;
+}
+.grp:hover{
+    color: var(--Very-dark-blue);
+    cursor: pointer;
+}
+.dm{
+    align-items: flex-start;
+}
+.received-message{
+    border: 1px solid hsl(219, 14%, 63%);
+    border-radius: 7px;
+    padding: 15px;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+.received-message p{
+    font-size: 18px;
+}
+.received-message:hover{
+    background: var(--Light-grayish-blue-1);
+    cursor: pointer;
+}
+
+/* mobile responsive */
+@media only screen and (max-width:567px){
+    body{
+        font-size: 15px;
+    }
+    .container{
+        margin: 1rem auto;
+    }
+    .contents{
+        margin: 5px;
+        padding: 30px 15px 0;
+    } 
+        
+    .notify{
+        font-size: 1.5em;
+    }
+    .num{
+        padding: 2px 10px;
+        font-size: 1rem;
+        font-weight: 800;
+    }
+    .mark{
+        cursor: pointer;
+        color: var(--Dark-grayish-blue);
+        font-size: 1.1rem;
+    }    
+    .name{
+        font-size: 1rem;
+    }
+    .secondary{
+        font-size: .9rem;
+    }
+    .grp{
+        font-size: .9rem;
+    }
+    .received-message{
+        padding: 12px;
+    }
+    .received-message p{
+        font-size: 16px;
+    }
+}
